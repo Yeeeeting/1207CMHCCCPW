@@ -165,7 +165,11 @@
               區塊 2: 線上報名 
             -->
             <div id="register" class="bg-white rounded-xl shadow-md overflow-hidden p-6 sm:p-8">
-                <h2 class="text-3xl font-bold tracking-tight text-secondary-blue mb-6">線上報名</h2>
+                <!-- [已修改] 將 h2 標題改為 flex 佈局，以容納人數上限提示 -->
+                <div class="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-6">
+                    <h2 class="text-3xl font-bold tracking-tight text-secondary-blue">線上報名</h2>
+                    <span class="text-xl font-medium text-teal-600">本活動上限60人</span>
+                </div>
                 
                 <form id="registrationForm" class="space-y-5">
                     <!-- 姓名 -->
@@ -592,7 +596,3 @@
 
 </body>
 </html>
-
-
-
-
